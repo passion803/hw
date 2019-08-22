@@ -1,4 +1,15 @@
-<table border="5px solid gray" width="50%" height="50%" style="text-align:center"  >
+<style>
+    table{
+        text-align:center;
+        font-size: 20px;
+        width=100%;
+        height=100%;
+        border=5px solid gray;
+        color:black;
+        font-family: "Lucida Console";
+    }
+</style>
+<table>
 <?php
     define("ROW", 10);
     define("DPR", 10);   // tds per row
@@ -15,7 +26,7 @@
                 
                 if ($newi % $j == 0){
                     $m = 0;
-                    echo '<td bgcolor="#999999" style="color:white">';
+                    echo '<td bgcolor="#999999">';
                     break;
                 } 
             }
@@ -24,9 +35,9 @@
             {  
                 if ($newi == 1)
                 {  
-                echo '<td bgcolor="#999999" style="color:white">';
+                echo '<td bgcolor="#999999">';
                 }else{
-                    echo '<td bgcolor="#ffdb4d" style="color:black">';
+                    echo '<td bgcolor="#ffdb4d">';
                 }                
             }   
                 echo "{$newi}";
@@ -34,5 +45,3 @@
         } echo '</tr>';
     }
 ?>
-
-
